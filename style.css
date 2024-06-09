@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Indie+Flower&family=Orbitron:wght@400..900&family=Play:wght@400;700&display=swap');
+/* Fonts = Play, Aldrich, Orbitron, Indie Flower */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0C0C0C;
+}
+
+.banner{
+    display: flex;
+    background-color: #481E14;
+    width: 1256px;
+    height: 100px;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    padding: 25px 30px;
+    width: 50px;
+    height: 50px;
+}
+.logo p{
+    padding: 25px 30px;
+    margin: 0;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Aldrich';
+    cursor: default;
+}
+.menuItems{
+    padding: 20px;
+}
+.menuItems ul{
+    padding-right: 50px;
+}
+.menuItems ul li{
+    list-style: none;
+    width: 60px;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+.menuItems ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Aldrich';
+}
+.menuItems ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F2613F;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.menuItems ul li:hover::after{
+    width: 100%;
+}
+.menuItems ul li a:hover{
+    color: #F2613F;
+    transition: all .3s;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #fff;
+    margin: 40px 42%;
+    font-family: 'Play';
+    cursor: default;
+}
+.cardHolder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.itemCard{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 255px;
+}
+.itemCard img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.itemCard:hover img{
+    transform: scale(1.1);
+  }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 59%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlayFigma{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlayReg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 47%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemCard:hover .overlay{
+    opacity: 1;
+}
+.itemCard:hover .overlayReg{
+    opacity: 1;
+}
+.itemCard:hover .overlayFigma{
+    opacity: 1;
+}
+.viewBtn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.itemInfo{
+    font-family: 'Play';
+    text-align: center;
+    margin: 30px 0;
+}
+.itemInfo a{
+    color: #fff;
+    text-decoration: none;
+}
+.itemInfo a:hover{
+    color: #F2613F;
+    transition: all .3s;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+  
+.modal-content{
+    position: relative;
+    margin: 10% auto;
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.close{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    background-color: #0000003f;
+    width: 50px;
+    border-radius: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+  
+#modalImage{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

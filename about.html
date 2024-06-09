@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Indie+Flower&family=Orbitron:wght@400..900&family=Play:wght@400;700&display=swap');
+        /* Fonts = Play, Aldrich, Orbitron, Indie Flower */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .background{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .banner{
+            display: flex;
+            background-color: #481E14;
+            width: 1272px;
+            height: 100px;
+            justify-content: space-between;
+        }
+        .logo{
+            display: flex;
+        }
+        .logo img{
+            padding: 25px 30px;
+            width: 50px;
+            height: 50px;
+        }
+        .logo p{
+            padding: 25px 30px;
+            margin: 0;
+            color: aliceblue;
+            font-size: 40px;
+            font-family: 'Aldrich';
+            cursor: default;
+        }
+        .menuItems{
+            padding: 36px;
+        }
+        .menuItems ul{
+            padding-right: 50px;
+        }
+        .menuItems ul li{
+            list-style: none;
+            width: 60px;
+            display: inline-block;
+            margin: 0 30px;
+            position: relative;
+        }
+        .menuItems ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Aldrich';
+        }
+        .menuItems ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #F2613F;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        .menuItems ul li:hover::after{
+            width: 100%;
+        }
+        .menuItems ul li a:hover{
+            color: #F2613F;
+            transition: all .3s;
+        }
+        .container{
+            display: block;
+            padding-top: 50px;
+            padding-left: 37%;
+        }
+        .infoCard{
+            height: 400px;
+            width: 350px;
+            border-radius: 20px;
+            border: 5px solid rgb(208, 200, 200);
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.563);
+            transition: all .3s;
+            text-align: center;
+        }
+        .infoCard:hover{
+            scale: 1.1;
+            transition: all .3s;
+            border: 5px solid #F2613F;
+        }
+        
+        .profilePic{
+            margin: 30px 28%;
+            width: auto;
+            height: 150px;
+            border-radius: 100px;
+            border: 5px solid rgb(208, 200, 200);
+        }
+        .infoCard p{
+            color: white;
+            font-family: 'Aldrich';
+            font-size: 17px;
+            width: 44vh;
+            margin: 0 44px;
+            cursor: default;
+        }
+        .fa-facebook{
+            margin: 0 10px;
+            font-size: 35px;
+            color: rgb(208, 200, 200);
+        }
+        .fa-facebook:hover{
+            color: #F2613F;
+        }
+        .fa-x-twitter:hover{
+            color: #F2613F;
+        }
+        .fa-github:hover{
+            color: #F2613F;
+        }
+        .fa-x-twitter{
+            margin: 0 10px;
+            font-size: 35px;
+            color: rgb(208, 200, 200);
+        }
+        .fa-github{
+            margin: 0 10px;
+            font-size: 35px;
+            color: rgb(208, 200, 200);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="banner">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+                <p>My Projects</p>
+            </div>
+            <div class="menuItems">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="infoCard">
+                <img src="images/profilePic.jpg" alt="Profile Pic" class="profilePic">
+                <p>Hello, I am Adolf Jonnel Villaverde. A student of BSIT in PBTS Colleges.</p>
+                <br><br><br>
+                <a href="https://www.facebook.com/adolfvillaverde"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/adolfusedbye"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/BSIT-Villaverde"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        
+
+
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/8cee1b4665.js" crossorigin="anonymous"></script>
+</body>
+</html>

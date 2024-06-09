@@ -1,0 +1,64 @@
+body{
+    background-color: #1B262C;
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 400px;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #0F4C75;
+    border-radius: 10px;
+}
+h1, label{
+    color: white;
+}
+label{
+    margin-right: 10px;
+}
+.inputGroup{
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+#pNumber{
+    margin-left: 27px;
+}
+
+#email{
+    margin-left: 95px;
+}
+#name{
+    margin-left: 93px;
+}
+select{
+    margin-left: 40px;
+}
+input, select{
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    padding: 5px;
+}
+.error{
+    color: #BBE1FA;
+    padding-left: 20px;
+    font-size: 14px;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8fa9ba;
+    transition: all .3s;
+}
+button:hover{
+    background-color: #BBE1FA;
+    transition: all .3s;
+}

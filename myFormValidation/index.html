@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Membership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="myForm">
+            
+            <div class="inputGroup">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..."><br>
+                <span class="error" id="nameErr"></span>
+            </div>
+            
+
+            <div class="inputGroup">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email..."><br>
+                <span class="error" id="emailErr"></span>
+            </div>
+            
+
+            <div class="inputGroup">
+                <label for="pNumber">Phone Number:</label>
+                <input type="number" id="pNumber" name="pNumber" placeholder="Enter your phone number..."><br>
+                <span class="error" id="pNumErr"></span>
+            </div>
+            
+            <div class="inputGroup">
+                <label for="payment">Select Payment Type:</label>
+                <select name="payment" id="payment">
+                    <option value="3">...</option>
+                    <option value="4">1 Month - 5$</option>
+                    <option value="4">5 Months - 20$</option>
+                    <option value="4">12 Months - 50$</option>
+                </select>
+                <span class="error" id="payErr"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
